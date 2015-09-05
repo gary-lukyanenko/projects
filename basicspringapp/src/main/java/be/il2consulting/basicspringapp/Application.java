@@ -11,6 +11,8 @@ public class Application {
 		Car car = (Car)ac.getBean("car");
 		car.drive();
 		
+		System.out.println(car);
+		
 		ac.close();
 		
 	}

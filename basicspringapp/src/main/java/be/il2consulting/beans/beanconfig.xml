@@ -4,5 +4,16 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="car" class="be.il2consulting.basicspringapp.Car"></bean>
+	<bean id="car" class="be.il2consulting.basicspringapp.Car">
+		
+		
+	<property name="model" value="A4"></property>
+	<property name="milage" value="75000"></property>
+	
+	<property name="engine" ref="engine"></property>
+	</bean>
+	<bean id="engine" class="be.il2consulting.basicspringapp.Engine">
+		<property name="model" value="163"></property>
+		<property name="type" value="diesel"></property>
+	</bean>
 </beans>
